@@ -1,0 +1,45 @@
+{% extends 'profiles/layout.html' %}
+
+
+{% block title %}
+О нас | Плутон
+{% endblock %}
+
+{% block content %}
+        {% block header %}
+        <header>
+            <div class="container">
+                <nav class="navbar navigation ">
+                    <a class="navbar-brand logo" href="#">
+                        <h1>Плутон</h1>
+                    </a>
+                      <i class="tf-ion-android-menu"></i>
+                </nav>
+            </div>
+        </header>
+        {% endblock %}
+
+
+        {% block footer %}
+            <footer>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="block">
+                                <a href="" class="footer-logo">Плутон</a>
+                                <ul class="menu">
+                                    <li class="">
+                                        <a href="{% url 'about' %}">О Плутон</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="{% url 'dev' %}">Разработчикам</a>
+                                    </li>
+                                </ul>
+                                <p class="copyright-text">Плутон © 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+        {% endblock %}
+{% endblock %}
